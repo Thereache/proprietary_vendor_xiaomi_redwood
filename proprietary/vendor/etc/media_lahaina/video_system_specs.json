@@ -17,14 +17,17 @@
             // don't support rotate feature in video core. TODO - Rename as enc_vpss_rotation
             "enc_c2d_rotation": false,
             // target supports cvp for all encode usecases.
-            "enc_cvp_enable": false,
+            "enc_cvp_enable": true,
             // encoder csc enable
             "enc_csc_enable": false,
             // perf hints support for decoder and encoder
             "perf_control_enable": false,
             // It is used to enable fastCV engine for flip support in the absence of VPSS hardware
             // support.
-            "enc_vpss_flip": true
+            "enc_vpss_flip": true,
+            "pipelining": true,
+            // This is used to limit secure usecase buffer count. Changes dynamic to static count
+            "dec_secure_static_count": false
         },
         "Presets": {
             // this is used for secure decoding performance boost handling
@@ -47,14 +50,23 @@
             // max B frame count between two P
             "enc_default_bframe_count": 1,
             // maximum MB/sec for default adaptive b-frame enablement case
-            // 1920x1088/256 MBs@60fps
-            "enc_adaptive_b_max_mbs_per_sec": 489600,
+            // 3840x2160@60fps
+            "enc_adaptive_b_max_mbs_per_sec": 1944000,
             // maximum MB/frame for default adaptive b-frame enablement case
-            // 1920x1088/256
-            "enc_adaptive_b_max_mbs_per_frame": 8160,
+            // 3840x2160/256
+            "enc_adaptive_b_max_mbs_per_frame": 32400,
             // maximum width for default adaptive b-frame enablement case
+            // Max Width=3840, Max Height=3840
+            "enc_adaptive_b_max_width": 3840,
+            // maximum MB/sec for default Hier-B enablement case
+            // 1920x1088@60fps
+            "enc_hier_b_max_mbs_per_sec": 489600,
+            // maximum MB/frame for default Hier-B enablement case
+            // 1920x1088/256
+            "enc_hier_b_max_mbs_per_frame": 8160,
+            // maximum width for default Hier-B enablement case
             // Max Width=1920, Max Height=1920
-            "enc_adaptive_b_max_width": 1920,
+            "enc_hier_b_max_width": 1920,
             // maximum decoder output rate if it is Nuplayer path and
             // player sets max refresh rate
             "max_supported_render_rate": 120,
@@ -87,9 +99,11 @@
             // allowed override value: 0 - 51
             "enc_bitrate_boost_qp_min": 10,
             "enc_bitrate_boost_qp_max": 40,
+            // additional buffers to be added while computing pipeline delays
+            "pipeline_extra_output_buffers": 2,
             // time threshold of output buffer allocation loop since last input buffer queued(ms)
             // 0 --> no such limitation (loop until allocation done)
-            "max_retry_alloc_output_timeout": 10000,
+            "max_retry_alloc_output_timeout": 0,
             // override default primaries to BT709 for >=UHD decode
             "default_primaries_override" : 0,
 
@@ -106,8 +120,14 @@
             // encoder support rotation as preprocessing
             "preprocess_rotation": 1,
             // encoder Hier-P maximum layer count: 6
-            "enc_hier_p_max_temporal_layer_count": 6
+            "enc_hier_p_max_temporal_layer_count": 6,
+            // encoder Hier-B maximum layer count: 4
+            "enc_hier_b_max_temporal_layer_count": 0
         },
+        // list of codec plugin libraries to be loaded into codec registry
+        "QC2CodecPlugins": [
+            "libqc2vppfilter.so"
+        ],
 
         // List of HW codecs enabled for this target
         "codecs-available": {
@@ -126,8 +146,15 @@
                 "c2.qti.avc.encoder",
                 "c2.qti.avc.encoder.secure",
                 "c2.qti.hevc.encoder",
+                "c2.qti.hevc.encoder.secure",
                 "c2.qti.hevc.encoder.cq",
                 "c2.qti.heic.encoder"
+            ]
+        },
+        "filters-available": {
+            "filters": [
+                "c2.qti.vpp.filter",
+                "c2.qti.vpp.filter.secure"
             ]
         }
     }
