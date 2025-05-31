@@ -458,10 +458,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    vendor.xiaomi.hardware.misys@1.0-impl \
-    vendor.xiaomi.hardware.misys@2.0-impl \
-    vendor.xiaomi.hardware.misys@3.0-impl \
-    vendor.xiaomi.hardware.misys@4.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -473,7 +469,6 @@ PRODUCT_PACKAGES += \
     libcapiv2svarnn \
     libcapiv2vop \
     libcdsprpc \
-    libcheckpid \
     libconfigdb \
     libcvp2_1 \
     libcvp_common \
@@ -486,11 +481,7 @@ PRODUCT_PACKAGES += \
     libidl \
     libllvm-glnext \
     libllvm-qcom \
-    liblogwrap_vendor \
     libmdmdetect \
-    libmicuttlefish_fs \
-    libmicuttlefish_utils \
-    libmivsock_utils \
     libmmosal_vendor \
     libnetmgr \
     libqcci_legacy \
@@ -528,10 +519,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
-    vendor.xiaomi.hardware.misys@1.0_vendor \
-    vendor.xiaomi.hardware.misys@2.0_vendor \
-    vendor.xiaomi.hardware.misys@3.0_vendor \
-    vendor.xiaomi.hardware.misys@4.0_vendor \
     btaudio_offload_if \
     audio.primary.lahaina \
     sound_trigger.primary.lahaina \
@@ -729,6 +716,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     vendor.xiaomi.hardware.displayfeature@1.0-impl \
+    vendor.xiaomi.hardware.misys@1.0-impl \
+    vendor.xiaomi.hardware.misys@2.0-impl \
+    vendor.xiaomi.hardware.misys@3.0-impl \
+    vendor.xiaomi.hardware.misys@4.0-impl \
     jcos_nq_client \
     lib-imscommon \
     lib-imsdpl \
@@ -799,6 +790,7 @@ PRODUCT_PACKAGES += \
     libcdfw_remote_api \
     libcdsp_default_listener \
     libceres \
+    libcheckpid \
     libchilog \
     libclient2slpi.notifier \
     libcne \
@@ -847,6 +839,7 @@ PRODUCT_PACKAGES += \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \
+    liblogwrap_vendor \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
@@ -868,10 +861,13 @@ PRODUCT_PACKAGES += \
     libmialgo_video_seg \
     libmialgoengine \
     libmibokeh_855 \
+    libmicuttlefish_fs \
+    libmicuttlefish_utils \
     libminkdescriptor \
     libminksocket \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
+    libmivsock_utils \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1087,6 +1083,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor.xiaomi.hardware.displayfeature@1.0_vendor \
+    vendor.xiaomi.hardware.misys@1.0_vendor \
+    vendor.xiaomi.hardware.misys@2.0_vendor \
+    vendor.xiaomi.hardware.misys@3.0_vendor \
+    vendor.xiaomi.hardware.misys@4.0_vendor \
     bm2n06 \
     bm2n08 \
     bm2n13 \
