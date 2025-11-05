@@ -679,7 +679,6 @@ PRODUCT_PACKAGES += \
     libaudiocloudctrl \
     libaudioparsers \
     libaudioroute_ext \
-    libbatterylistener \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libcapiv2svacnn \
@@ -689,9 +688,7 @@ PRODUCT_PACKAGES += \
     libgcs-ipc \
     libgcs-osal \
     libgcs \
-    libhdmiedid \
     libhdmipassthru \
-    libhfp \
     liblistensoundmodel2 \
     libmulawdec \
     libqc2vppfilter \
@@ -704,7 +701,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_v4l2codec \
     libqtigef \
     libresampler \
-    libsndmonitor \
     libvideoNS \
     libasphere \
     libshoebox \
