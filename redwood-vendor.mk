@@ -1247,13 +1247,11 @@ PRODUCT_PACKAGES += \
     adsprpcd \
     batterysecret \
     cdsprpcd \
-    chifeature2test \
     cnd \
     cnss-daemon \
     displayfeature \
     dpmQmiMgr \
     dspservice \
-    f2player \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
