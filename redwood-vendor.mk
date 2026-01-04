@@ -276,7 +276,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/xiaomi/redwood/proprietary/vendor/etc/mdss_dsi_m20_36_02_0a_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m20_36_02_0a_dsc_vid_mi.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
@@ -589,6 +588,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/redwood/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/focaltech_ts_fw_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/focaltech_ts_fw_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_cfg_group_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_cfg_group_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_firmware_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_firmware_m20.bin \
