@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/mixer_paths_yupikidp.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/audio/sku_yupik/sound_trigger_mixer_paths_yupikidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/sound_trigger_mixer_paths_yupikidp.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/audio/sku_yupik/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/sound_trigger_platform_info.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     vendor/xiaomi/redwood/proprietary/vendor/etc/camera/3rdpartconfigure.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/3rdpartconfigure.txt \
     vendor/xiaomi/redwood/proprietary/vendor/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/GpuKernelRepo.pb \
@@ -260,7 +264,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
@@ -269,16 +272,47 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/mdss_dsi_m20_36_02_0a_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m20_36_02_0a_dsc_vid_mi.xml \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina_vendor.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_performance_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_performance_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina_vendor.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_system_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_system_default.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_system_default_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_system_default_lahaina.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_system_default_yupik.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_system_default_yupik.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_lahaina/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_lahaina/video_system_specs.json \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina_vendor.xml \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_profiles_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_v1.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLutInfo.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLutInfo.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_0.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_1.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_10.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_11.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_12.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_13.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_14.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_15.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_16.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_17.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_2.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_3.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_4.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_5.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_6.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_7.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_8.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/miLut_9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_9.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/mi_gc_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_0.txt \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/mi_gc_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_1.txt \
     vendor/xiaomi/redwood/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/redwood/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/redwood/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
@@ -357,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/redwood/proprietary/vendor/etc/sensors/judge_calibrated.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/judge_calibrated.json \
     vendor/xiaomi/redwood/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/redwood/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/redwood/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/redwood/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
@@ -479,6 +514,54 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mbn \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_1v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mdt \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v_unsigned.mbn \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b00 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b01 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b02 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b03 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b04 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b05 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b06 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b07 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b08 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b09 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b10 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b11 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b12 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b13 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b14 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b15 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b16 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b17 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b18 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b19 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mbn \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mdt \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v_unsigned.mbn \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b00 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b02 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b03 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b04 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b05 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b06 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b07 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b08 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b09 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b10 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b11 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b12 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b13 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b14 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b15 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b16 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b17 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b18 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.elf \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.lst:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.lst \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/xiaomi/redwood/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b00 \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b01 \
     vendor/xiaomi/redwood/proprietary/vendor/firmware/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b02 \
@@ -499,6 +582,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/redwood/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/focaltech_ts_fw_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/focaltech_ts_fw_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_cfg_group_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_cfg_group_m20.bin \
     vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_firmware_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_firmware_m20.bin \
@@ -525,9 +609,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libc2d30_bltlib \
     libcamxexternalformatutils \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
     libcdsprpc \
     libconfigdb \
     libcvp2_1 \
@@ -570,6 +651,7 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     libxml \
+    libmisoundfx \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
@@ -594,6 +676,9 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -755,7 +840,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
-    displayfeature.default \
     fingerprint.goodix.default \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.gnss@4.0-impl \
@@ -767,7 +851,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vendor.xiaomi.hardware.misys@1.0-impl \
     vendor.xiaomi.hardware.misys@2.0-impl \
     vendor.xiaomi.hardware.misys@3.0-impl \
@@ -843,7 +926,6 @@ PRODUCT_PACKAGES += \
     libceres \
     libcheckpid \
     libchilog \
-    libclient2slpi.notifier \
     libcne \
     libcneapiclient \
     libcneoplookup \
@@ -857,8 +939,6 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdeflicker \
     libdisp-aba \
-    libdisplayfeature \
-    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -886,7 +966,6 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libloadalgo_stub \
     libloc_api_v02 \
-    libloc_api_wds \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \
@@ -1131,56 +1210,55 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.campostproc@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
-    vendor.xiaomi.hardware.displayfeature@1.0_vendor \
     vendor.xiaomi.hardware.misys@1.0_vendor \
     vendor.xiaomi.hardware.misys@2.0_vendor \
     vendor.xiaomi.hardware.misys@3.0_vendor \
     vendor.xiaomi.hardware.misys@4.0_vendor \
-    bm2n06 \
-    bm2n08 \
-    bm2n13 \
-    bm2n14 \
-    bm2n15 \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    capi_v2_dap_cpdp \
-    hrtf5c \
-    libQ6MSFR_manager_skel \
-    libQnnHtpAltPrepSkel \
-    libQnnHtpSkel \
-    libVppAisQnnHtp \
-    libVppQnnHtp \
-    libadsp_jpege_skel \
-    libapps_mem_heap \
-    libarc_htp_driver_skel \
-    libarcsoft_hdrplus_hvx_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcamera_nn_skel \
-    libcvpdsp_2_1 \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsnpe_dsp_v65_domains_v2_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsnpe_dsp_v68_domains_v3_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    libsuper_res_networks \
-    libvpp_ais_networks \
-    libvpt_action_recognition \
-    misound_karaoke_res \
-    misound_karaokemix_res \
-    misound_res_headphone \
-    misound_res_spk \
+    vendor_lib_rfsa_adsp_bm2n06_bin \
+    vendor_lib_rfsa_adsp_bm2n08_bin \
+    vendor_lib_rfsa_adsp_bm2n13_bin \
+    vendor_lib_rfsa_adsp_bm2n14_bin \
+    vendor_lib_rfsa_adsp_bm2n15_bin \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so \
+    vendor_lib_rfsa_adsp_hrtf5c_bin \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpAltPrepSkel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpSkel_so \
+    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
+    vendor_lib_rfsa_adsp_libVppQnnHtp_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_2_1_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libsuper_res_networks_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
+    vendor_lib_rfsa_adsp_misound_karaoke_res_bin \
+    vendor_lib_rfsa_adsp_misound_karaokemix_res_bin \
+    vendor_lib_rfsa_adsp_misound_res_headphone_bin \
+    vendor_lib_rfsa_adsp_misound_res_spk_bin \
     liblhdc \
     liblhdcBT_enc \
     liblhdcv5 \
@@ -1236,11 +1314,12 @@ PRODUCT_PACKAGES += \
     adsprpcd \
     batterysecret \
     cdsprpcd \
+    chifeature2test \
     cnd \
     cnss-daemon \
-    displayfeature \
     dpmQmiMgr \
     dspservice \
+    f2player \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
@@ -1256,7 +1335,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.secure_element@1.2-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor.xiaomi.hardware.misys@1.0-service \
     vendor.xiaomi.hardware.misys@2.0-service \
     vendor.xiaomi.hardware.misys@3.0-service \
