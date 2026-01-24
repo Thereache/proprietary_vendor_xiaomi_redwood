@@ -651,7 +651,6 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     libxml \
-    libmisoundfx \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
