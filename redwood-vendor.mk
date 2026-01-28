@@ -697,7 +697,6 @@ PRODUCT_PACKAGES += \
     libresampler \
     libvideoNS \
     libasphere \
-    libshoebox \
     libxlog \
     android.hardware.secure_element@1.0-impl \
     com.qti.actuator.redwood_sunny_s5khm2sd_dw9800_wide \
