@@ -878,6 +878,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_mf_superresolution \
     libarcsoft_qnnhtp \
     libarcsoft_super_night_raw \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libbitmlengine \
     libbitmlenginev2 \
     libbtnv \
@@ -1088,6 +1091,8 @@ PRODUCT_PACKAGES += \
     libwqe \
     libwvhidl \
     libxtadapter \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     ls_nq_client \
     libwvdrmengine \
     qcrilMarshal \
