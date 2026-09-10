@@ -1339,7 +1339,6 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     power_off_alarm \
-    ppd \
     qdcmss \
     qmipriod \
     qrtr-lookup \
