@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/product/media/audio/ringtones/SpaceAge.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/SpaceAge.ogg \
     vendor/xiaomi/redwood/proprietary/product/media/audio/ringtones/ToyRobot.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/ToyRobot.ogg \
     vendor/xiaomi/redwood/proprietary/product/media/audio/ringtones/Vigor.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Vigor.ogg \
-    vendor/xiaomi/redwood/proprietary/system/etc/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
@@ -264,10 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -571,11 +566,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libldacBT_abr \
     libldacBT_enc \
-    libmisys_jni.xiaomi \
-    vendor.xiaomi.hardware.misys@1.0 \
-    vendor.xiaomi.hardware.misys@2.0 \
-    vendor.xiaomi.hardware.misys@3.0 \
-    vendor.xiaomi.hardware.misys@4.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -829,10 +819,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
-    vendor.xiaomi.hardware.misys@1.0-impl \
-    vendor.xiaomi.hardware.misys@2.0-impl \
-    vendor.xiaomi.hardware.misys@3.0-impl \
-    vendor.xiaomi.hardware.misys@4.0-impl \
     jcos_nq_client \
     lib-imscommon \
     lib-imsdpl \
@@ -905,7 +891,6 @@ PRODUCT_PACKAGES += \
     libcdfw_remote_api \
     libcdsp_default_listener \
     libceres \
-    libcheckpid \
     libchilog \
     libcne \
     libcneapiclient \
@@ -950,7 +935,6 @@ PRODUCT_PACKAGES += \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \
-    liblogwrap_vendor \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
@@ -971,14 +955,11 @@ PRODUCT_PACKAGES += \
     libmialgo_video_seg \
     libmialgoengine \
     libmibokeh_855 \
-    libmicuttlefish_fs \
-    libmicuttlefish_utils \
     libminkdescriptor \
     libminksocket \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
     libmisight \
-    libmivsock_utils \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1192,10 +1173,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.campostproc@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
-    vendor.xiaomi.hardware.misys@1.0_vendor \
-    vendor.xiaomi.hardware.misys@2.0_vendor \
-    vendor.xiaomi.hardware.misys@3.0_vendor \
-    vendor.xiaomi.hardware.misys@4.0_vendor \
     vendor_lib_rfsa_adsp_bm2n06_bin \
     vendor_lib_rfsa_adsp_bm2n08_bin \
     vendor_lib_rfsa_adsp_bm2n13_bin \
@@ -1289,10 +1266,6 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.qti.gnss@4.0-service.xml \
     vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
-    vendor.xiaomi.hardware.misys@1.0.xml \
-    vendor.xiaomi.hardware.misys@2.0.xml \
-    vendor.xiaomi.hardware.misys@3.0.xml \
-    vendor.xiaomi.hardware.misys@4.0.xml \
     adpl \
     adsprpcd \
     batterysecret \
@@ -1316,10 +1289,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.secure_element@1.2-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
-    vendor.xiaomi.hardware.misys@1.0-service \
-    vendor.xiaomi.hardware.misys@2.0-service \
-    vendor.xiaomi.hardware.misys@3.0-service \
-    vendor.xiaomi.hardware.misys@4.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
