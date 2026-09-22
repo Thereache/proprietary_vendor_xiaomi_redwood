@@ -556,11 +556,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/xiaomi/redwood/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
-    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/focaltech_ts_fw_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/focaltech_ts_fw_m20.bin \
-    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_cfg_group_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_cfg_group_m20.bin \
-    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_firmware_m20.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_firmware_m20.bin \
-    vendor/xiaomi/redwood/proprietary/vendor_ramdisk/lib/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_test_limits_255.csv
+    vendor/xiaomi/redwood/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
     libldacBT_abr \
