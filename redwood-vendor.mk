@@ -669,6 +669,7 @@ PRODUCT_PACKAGES += \
     libvideoNS \
     libasphere \
     libxlog \
+    adrenoutils_extra \
     android.hardware.secure_element@1.0-impl \
     com.qti.actuator.redwood_sunny_s5khm2sd_dw9800_wide \
     com.qti.eeprom.redwood_aac_ov02b10_p24c64f_macro_eeprom \
@@ -804,6 +805,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    v86adreno_app_profiles \
+    vendor.qti.qspmhal@1.0 \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
@@ -837,11 +840,13 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libOpenCL_adreno \
     libQSEEComAPI \
     libQTEEConnector_vendor \
     libQnnHtpStub \
     libSNPE \
     libXMFaceFocus \
+    libadreno_compiler_cl \
     libadsp_default_listener \
     libadsprpc \
     libaidenoiser \
@@ -918,6 +923,7 @@ PRODUCT_PACKAGES += \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
+    libgpu_tonemapper \
     libhdr_tm \
     libhta \
     libhydra_common \
@@ -927,6 +933,8 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
@@ -1077,14 +1085,22 @@ PRODUCT_PACKAGES += \
     libxtwifi_server_protocol_uri_v3 \
     ls_nq_client \
     libwvdrmengine \
+    notadreno_utils \
+    notdmabufheap \
+    notgsl \
+    notllvm-glnext \
+    notllvm-qgl \
     qcrilMarshal \
     qcrild_libqcrilnrutils \
     qtiril-utils \
     qtiwakelock \
+    s53adreno_utils \
     se_nq_extn_client \
     sensors.mius.proximity \
     sensors.ssc \
     sensors.touch.detect \
+    v86adreno_utils \
+    v88adreno_utils \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
