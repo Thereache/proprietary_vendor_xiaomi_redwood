@@ -262,7 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -822,7 +821,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     jcos_nq_client \
     lib-imscommon \
     lib-imsdpl \
@@ -968,7 +966,6 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
-    libmisight \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1031,7 +1028,6 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsensor_cal_v2 \
     libsensorcal \
     libsensorslog \
     libsn100u_fw \
@@ -1188,8 +1184,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
     vendor.xiaomi.hardware.campostproc@1.0 \
-    vendor.xiaomi.hardware.citsensorservice@1.0 \
-    vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor_lib_rfsa_adsp_bm2n06_bin \
     vendor_lib_rfsa_adsp_bm2n08_bin \
     vendor_lib_rfsa_adsp_bm2n13_bin \
@@ -1279,7 +1273,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.qti.gnss@4.0-service.xml \
-    vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
     adpl \
     adsprpcd \
     batterysecret \
@@ -1302,7 +1295,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.secure_element@1.2-service \
-    vendor.xiaomi.hardware.citsensorservice@1.1-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
